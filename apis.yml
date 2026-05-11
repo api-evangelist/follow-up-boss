@@ -1,0 +1,66 @@
+aid: follow-up-boss
+name: Follow Up Boss
+description: >-
+  Follow Up Boss is a real estate CRM and lead management platform helping
+  agents and teams capture leads from any source, automate follow-up via
+  texts, emails, and calls, manage pipelines and deals, and track team
+  performance. The Follow Up Boss REST API exposes resources such as people,
+  notes, tasks, deals, calls, text messages, events, and webhooks, secured
+  with HTTP Basic authentication using an API key obtained from the
+  application's admin settings.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Real Estate
+  - CRM
+  - Lead Management
+  - Sales Automation
+  - Follow Up
+  - Pipeline Management
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/follow-up-boss/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: follow-up-boss:rest-api
+    name: Follow Up Boss API
+    description: >-
+      REST API for managing real estate leads, contacts, deals, notes, tasks,
+      calls, text messages, events, and webhooks in Follow Up Boss.
+      Authenticated with HTTP Basic using an API key issued from the Follow
+      Up Boss admin settings. HTTPS is required for all requests.
+    humanURL: https://docs.followupboss.com
+    baseURL: https://api.followupboss.com/v1
+    tags:
+      - Real Estate
+      - CRM
+      - Leads
+      - Deals
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://docs.followupboss.com/reference
+      - type: Getting Started
+        url: https://docs.followupboss.com/reference/getting-started
+      - type: Authentication
+        url: https://docs.followupboss.com/reference/authentication
+      - type: Webhooks
+        url: https://docs.followupboss.com/reference/webhooks
+
+common:
+  - type: Website
+    url: https://www.followupboss.com
+  - type: Documentation
+    url: https://docs.followupboss.com
+  - type: Pricing
+    url: https://www.followupboss.com/pricing
+  - type: Sign Up
+    url: https://www.followupboss.com/free-trial
+  - type: Support
+    url: https://help.followupboss.com
+  - type: Status
+    url: https://status.followupboss.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
