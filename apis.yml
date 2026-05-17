@@ -41,7 +41,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.followupboss.com/reference
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.followupboss.com/reference/getting-started
       - type: Authentication
         url: https://docs.followupboss.com/reference/authentication
@@ -55,11 +55,11 @@ common:
     url: https://docs.followupboss.com
   - type: Pricing
     url: https://www.followupboss.com/pricing
-  - type: Sign Up
+  - type: SignUp
     url: https://www.followupboss.com/free-trial
   - type: Support
     url: https://help.followupboss.com
-  - type: Status
+  - type: StatusPage
     url: https://status.followupboss.com
 maintainers:
   - FN: Kin Lane
