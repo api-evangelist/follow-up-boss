@@ -49,6 +49,10 @@ apis:
         url: https://docs.followupboss.com/reference/webhooks
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/FollowUpBoss
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/follow-up-boss
   - type: Website
     url: https://www.followupboss.com
   - type: Documentation
