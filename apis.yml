@@ -65,6 +65,8 @@ common:
     url: https://help.followupboss.com
   - type: StatusPage
     url: https://status.followupboss.com
+  - type: LLMsTxt
+    url: https://docs.followupboss.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
