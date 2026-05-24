@@ -1,0 +1,306 @@
+openapi: 3.1.0
+info:
+  title: Follow Up Boss API
+  version: "1.0"
+  description: |
+    Best-effort OpenAPI 3.1 description of the Follow Up Boss REST API,
+    derived from the public reference at https://docs.followupboss.com/reference.
+    Authenticated with HTTP Basic using an API key (as username) issued from
+    the Follow Up Boss admin settings. HTTPS is required for all requests.
+  contact:
+    name: Follow Up Boss
+    url: https://docs.followupboss.com
+servers:
+  - url: https://api.followupboss.com/v1
+    description: Production
+security:
+  - basicAuth: []
+tags:
+  - name: People
+  - name: Notes
+  - name: Tasks
+  - name: Deals
+  - name: Calls
+  - name: TextMessages
+  - name: Events
+  - name: Webhooks
+paths:
+  /people:
+    get:
+      tags: [People]
+      summary: List people
+      parameters:
+        - $ref: '#/components/parameters/Limit'
+        - $ref: '#/components/parameters/Offset'
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [People]
+      summary: Create a person
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /people/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [People]
+      summary: Retrieve a person
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [People]
+      summary: Update a person
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    delete:
+      tags: [People]
+      summary: Delete a person
+      responses:
+        '204': { description: Deleted }
+  /people/checkDuplicate:
+    get:
+      tags: [People]
+      summary: Check for duplicate person by email or phone
+      parameters:
+        - { name: email, in: query, required: false, schema: { type: string, format: email } }
+        - { name: phone, in: query, required: false, schema: { type: string } }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /people/unclaimed:
+    get:
+      tags: [People]
+      summary: List unclaimed people
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /people/claim:
+    post:
+      tags: [People]
+      summary: Claim a person
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /notes:
+    post:
+      tags: [Notes]
+      summary: Create a note
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /notes/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Notes]
+      summary: Retrieve a note
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [Notes]
+      summary: Update a note
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    delete:
+      tags: [Notes]
+      summary: Delete a note
+      responses:
+        '204': { description: Deleted }
+  /tasks:
+    get:
+      tags: [Tasks]
+      summary: List tasks
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [Tasks]
+      summary: Create a task
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /tasks/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Tasks]
+      summary: Retrieve a task
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [Tasks]
+      summary: Update a task
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    delete:
+      tags: [Tasks]
+      summary: Delete a task
+      responses:
+        '204': { description: Deleted }
+  /deals:
+    get:
+      tags: [Deals]
+      summary: List deals
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [Deals]
+      summary: Create a deal
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /deals/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Deals]
+      summary: Retrieve a deal
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [Deals]
+      summary: Update a deal
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    delete:
+      tags: [Deals]
+      summary: Delete a deal
+      responses:
+        '204': { description: Deleted }
+  /calls:
+    get:
+      tags: [Calls]
+      summary: List calls
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [Calls]
+      summary: Create a call record
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /calls/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Calls]
+      summary: Retrieve a call
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [Calls]
+      summary: Update a call
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /textMessages:
+    get:
+      tags: [TextMessages]
+      summary: List text messages
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [TextMessages]
+      summary: Create a text message
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /textMessages/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [TextMessages]
+      summary: Retrieve a text message
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /events:
+    get:
+      tags: [Events]
+      summary: List events
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [Events]
+      summary: Create an event (typically a new lead)
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /events/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Events]
+      summary: Retrieve an event
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+  /webhooks:
+    get:
+      tags: [Webhooks]
+      summary: List webhook subscriptions
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    post:
+      tags: [Webhooks]
+      summary: Create a webhook subscription
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '201': { $ref: '#/components/responses/Json' }
+  /webhooks/{id}:
+    parameters:
+      - $ref: '#/components/parameters/Id'
+    get:
+      tags: [Webhooks]
+      summary: Retrieve a webhook subscription
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    put:
+      tags: [Webhooks]
+      summary: Update a webhook subscription
+      requestBody: { $ref: '#/components/requestBodies/JsonBody' }
+      responses:
+        '200': { $ref: '#/components/responses/Json' }
+    delete:
+      tags: [Webhooks]
+      summary: Delete a webhook subscription
+      responses:
+        '204': { description: Deleted }
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth with the Follow Up Boss API key as the username and a blank password
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema: { type: string }
+    Limit:
+      name: limit
+      in: query
+      required: false
+      schema: { type: integer, minimum: 1, maximum: 100 }
+    Offset:
+      name: offset
+      in: query
+      required: false
+      schema: { type: integer, minimum: 0 }
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
