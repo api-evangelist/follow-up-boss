@@ -49,6 +49,12 @@ apis:
         url: https://docs.followupboss.com/reference/webhooks
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/follow-up-boss-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/follow-up-boss-domain-security.yml
+  - type: Authentication
+    url: authentication/follow-up-boss-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/FollowUpBoss
   - type: LinkedIn
@@ -67,6 +73,8 @@ common:
     url: https://status.followupboss.com
   - type: LlmsText
     url: https://docs.followupboss.com/llms.txt
+  - url: https://www.followupboss.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
