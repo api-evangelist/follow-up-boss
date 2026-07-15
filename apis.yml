@@ -49,6 +49,8 @@ apis:
         url: https://docs.followupboss.com/reference/webhooks
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/follow-up-boss-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/follow-up-boss-vulnerability-disclosure.yml
   - type: DomainSecurity
