@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: Follow Up Boss Calls API
+  version: '1.0'
+  description: 'Best-effort OpenAPI 3.1 description of the Follow Up Boss REST API,
+
+    derived from the public reference at https://docs.followupboss.com/reference.
+
+    Authenticated with HTTP Basic using an API key (as username) issued from
+
+    the Follow Up Boss admin settings. HTTPS is required for all requests.
+
+    '
+  contact:
+    name: Follow Up Boss
+    url: https://docs.followupboss.com
+servers:
+- url: https://api.followupboss.com/v1
+  description: Production
+security:
+- basicAuth: []
+tags:
+- name: Calls
+paths:
+  /calls:
+    get:
+      tags:
+      - Calls
+      summary: List calls
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    post:
+      tags:
+      - Calls
+      summary: Create a call record
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '201':
+          $ref: '#/components/responses/Json'
+  /calls/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Calls
+      summary: Retrieve a call
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    put:
+      tags:
+      - Calls
+      summary: Update a call
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+components:
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth with the Follow Up Boss API key as the username and a blank password

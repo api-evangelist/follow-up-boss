@@ -1,0 +1,152 @@
+openapi: 3.1.0
+info:
+  title: Follow Up Boss Calls People API
+  version: '1.0'
+  description: 'Best-effort OpenAPI 3.1 description of the Follow Up Boss REST API,
+
+    derived from the public reference at https://docs.followupboss.com/reference.
+
+    Authenticated with HTTP Basic using an API key (as username) issued from
+
+    the Follow Up Boss admin settings. HTTPS is required for all requests.
+
+    '
+  contact:
+    name: Follow Up Boss
+    url: https://docs.followupboss.com
+servers:
+- url: https://api.followupboss.com/v1
+  description: Production
+security:
+- basicAuth: []
+tags:
+- name: People
+paths:
+  /people:
+    get:
+      tags:
+      - People
+      summary: List people
+      parameters:
+      - $ref: '#/components/parameters/Limit'
+      - $ref: '#/components/parameters/Offset'
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    post:
+      tags:
+      - People
+      summary: Create a person
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '201':
+          $ref: '#/components/responses/Json'
+  /people/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - People
+      summary: Retrieve a person
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    put:
+      tags:
+      - People
+      summary: Update a person
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    delete:
+      tags:
+      - People
+      summary: Delete a person
+      responses:
+        '204':
+          description: Deleted
+  /people/checkDuplicate:
+    get:
+      tags:
+      - People
+      summary: Check for duplicate person by email or phone
+      parameters:
+      - name: email
+        in: query
+        required: false
+        schema:
+          type: string
+          format: email
+      - name: phone
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+  /people/unclaimed:
+    get:
+      tags:
+      - People
+      summary: List unclaimed people
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+  /people/claim:
+    post:
+      tags:
+      - People
+      summary: Claim a person
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+components:
+  parameters:
+    Limit:
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+    Offset:
+      name: offset
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth with the Follow Up Boss API key as the username and a blank password

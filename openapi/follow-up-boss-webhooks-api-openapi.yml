@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: Follow Up Boss Calls Webhooks API
+  version: '1.0'
+  description: 'Best-effort OpenAPI 3.1 description of the Follow Up Boss REST API,
+
+    derived from the public reference at https://docs.followupboss.com/reference.
+
+    Authenticated with HTTP Basic using an API key (as username) issued from
+
+    the Follow Up Boss admin settings. HTTPS is required for all requests.
+
+    '
+  contact:
+    name: Follow Up Boss
+    url: https://docs.followupboss.com
+servers:
+- url: https://api.followupboss.com/v1
+  description: Production
+security:
+- basicAuth: []
+tags:
+- name: Webhooks
+paths:
+  /webhooks:
+    get:
+      tags:
+      - Webhooks
+      summary: List webhook subscriptions
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    post:
+      tags:
+      - Webhooks
+      summary: Create a webhook subscription
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '201':
+          $ref: '#/components/responses/Json'
+  /webhooks/{id}:
+    parameters:
+    - $ref: '#/components/parameters/Id'
+    get:
+      tags:
+      - Webhooks
+      summary: Retrieve a webhook subscription
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    put:
+      tags:
+      - Webhooks
+      summary: Update a webhook subscription
+      requestBody:
+        $ref: '#/components/requestBodies/JsonBody'
+      responses:
+        '200':
+          $ref: '#/components/responses/Json'
+    delete:
+      tags:
+      - Webhooks
+      summary: Delete a webhook subscription
+      responses:
+        '204':
+          description: Deleted
+components:
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      description: HTTP Basic auth with the Follow Up Boss API key as the username and a blank password
