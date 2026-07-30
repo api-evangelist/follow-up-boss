@@ -9,7 +9,19 @@ description: >-
   with HTTP Basic authentication using an API key obtained from the
   application's admin settings.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/follow-up-boss.png
 tags:
   - Real Estate
   - CRM
@@ -23,31 +35,109 @@ created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: follow-up-boss:rest-api
-    name: Follow Up Boss API
-    description: >-
-      REST API for managing real estate leads, contacts, deals, notes, tasks,
-      calls, text messages, events, and webhooks in Follow Up Boss.
-      Authenticated with HTTP Basic using an API key issued from the Follow
-      Up Boss admin settings. HTTPS is required for all requests.
-    humanURL: https://docs.followupboss.com
-    baseURL: https://api.followupboss.com/v1
-    tags:
-      - Real Estate
-      - CRM
-      - Leads
-      - Deals
-      - Webhooks
-    properties:
-      - type: Documentation
-        url: https://docs.followupboss.com/reference
-      - type: GettingStarted
-        url: https://docs.followupboss.com/reference/getting-started
-      - type: Authentication
-        url: https://docs.followupboss.com/reference/authentication
-      - type: Webhooks
-        url: https://docs.followupboss.com/reference/webhooks
-
+- aid: follow-up-boss:rest-api
+  name: Follow Up Boss API
+  description: >-
+    REST API for managing real estate leads, contacts, deals, notes, tasks, calls, text messages, events,
+    and webhooks in Follow Up Boss. Authenticated with HTTP Basic using an API key issued from the Follow
+    Up Boss admin settings. HTTPS is required for all requests.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Real Estate
+  - CRM
+  - Leads
+  - Deals
+  - Webhooks
+  properties:
+  - type: Documentation
+    url: https://docs.followupboss.com/reference
+  - type: GettingStarted
+    url: https://docs.followupboss.com/reference/getting-started
+  - type: Authentication
+    url: https://docs.followupboss.com/reference/authentication
+  - type: Webhooks
+    url: https://docs.followupboss.com/reference/webhooks
+- aid: follow-up-boss:follow-up-boss-calls-api
+  name: Follow Up Boss Calls API
+  description: The Calls API from Follow Up Boss — 2 operation(s) for calls.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Calls
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-calls-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-deals-api
+  name: Follow Up Boss Deals API
+  description: The Deals API from Follow Up Boss — 2 operation(s) for deals.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Deals
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-deals-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-events-api
+  name: Follow Up Boss Events API
+  description: The Events API from Follow Up Boss — 2 operation(s) for events.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Events
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-events-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-notes-api
+  name: Follow Up Boss Notes API
+  description: The Notes API from Follow Up Boss — 2 operation(s) for notes.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Notes
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-notes-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-people-api
+  name: Follow Up Boss People API
+  description: The People API from Follow Up Boss — 5 operation(s) for people.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-people-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-tasks-api
+  name: Follow Up Boss Tasks API
+  description: The Tasks API from Follow Up Boss — 2 operation(s) for tasks.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-tasks-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-textmessages-api
+  name: Follow Up Boss TextMessages API
+  description: The TextMessages API from Follow Up Boss — 2 operation(s) for textmessages.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - TextMessages
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-textmessages-api-openapi.yml
+- aid: follow-up-boss:follow-up-boss-webhooks-api
+  name: Follow Up Boss Webhooks API
+  description: The Webhooks API from Follow Up Boss — 2 operation(s) for webhooks.
+  humanURL: https://docs.followupboss.com
+  baseURL: https://api.followupboss.com/v1
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/follow-up-boss-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/follow-up-boss-agentic-access.yml
