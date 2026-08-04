@@ -1,0 +1,28 @@
+{
+  "provider": "follow-up-boss",
+  "sources": [
+    "follow-up-boss-calls-api-openapi.yml",
+    "follow-up-boss-deals-api-openapi.yml",
+    "follow-up-boss-events-api-openapi.yml",
+    "follow-up-boss-notes-api-openapi.yml",
+    "follow-up-boss-people-api-openapi.yml",
+    "follow-up-boss-tasks-api-openapi.yml",
+    "follow-up-boss-textmessages-api-openapi.yml",
+    "follow-up-boss-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "follow-up-boss-calls-api-openapi.yml",
+    "follow-up-boss-deals-api-openapi.yml",
+    "follow-up-boss-events-api-openapi.yml",
+    "follow-up-boss-notes-api-openapi.yml",
+    "follow-up-boss-people-api-openapi.yml",
+    "follow-up-boss-tasks-api-openapi.yml",
+    "follow-up-boss-textmessages-api-openapi.yml",
+    "follow-up-boss-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
