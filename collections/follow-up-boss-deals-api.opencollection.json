@@ -1,0 +1,109 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Follow Up Boss Calls Deals API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Deals",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List deals",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/deals"
+          },
+          "docs": "List deals"
+        },
+        {
+          "info": {
+            "name": "Create a deal",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/deals",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a deal"
+        },
+        {
+          "info": {
+            "name": "Retrieve a deal",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/deals/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a deal"
+        },
+        {
+          "info": {
+            "name": "Update a deal",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.followupboss.com/v1/deals/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a deal"
+        },
+        {
+          "info": {
+            "name": "Delete a deal",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.followupboss.com/v1/deals/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a deal"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

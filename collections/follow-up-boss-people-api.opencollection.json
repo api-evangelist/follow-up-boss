@@ -1,0 +1,170 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Follow Up Boss Calls People API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "People",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List people",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/people",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List people"
+        },
+        {
+          "info": {
+            "name": "Create a person",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/people",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a person"
+        },
+        {
+          "info": {
+            "name": "Retrieve a person",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/people/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a person"
+        },
+        {
+          "info": {
+            "name": "Update a person",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.followupboss.com/v1/people/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a person"
+        },
+        {
+          "info": {
+            "name": "Delete a person",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.followupboss.com/v1/people/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a person"
+        },
+        {
+          "info": {
+            "name": "Check for duplicate person by email or phone",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/people/checkDuplicate",
+            "params": [
+              {
+                "name": "email",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "phone",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Check for duplicate person by email or phone"
+        },
+        {
+          "info": {
+            "name": "List unclaimed people",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/people/unclaimed"
+          },
+          "docs": "List unclaimed people"
+        },
+        {
+          "info": {
+            "name": "Claim a person",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/people/claim",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Claim a person"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

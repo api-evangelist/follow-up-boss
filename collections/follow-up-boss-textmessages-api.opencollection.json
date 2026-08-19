@@ -1,0 +1,69 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Follow Up Boss Calls TextMessages API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "TextMessages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List text messages",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/textMessages"
+          },
+          "docs": "List text messages"
+        },
+        {
+          "info": {
+            "name": "Create a text message",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/textMessages",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a text message"
+        },
+        {
+          "info": {
+            "name": "Retrieve a text message",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/textMessages/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a text message"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

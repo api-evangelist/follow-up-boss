@@ -1,0 +1,98 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Follow Up Boss Calls Notes API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Notes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a note",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/notes",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a note"
+        },
+        {
+          "info": {
+            "name": "Retrieve a note",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/notes/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a note"
+        },
+        {
+          "info": {
+            "name": "Update a note",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.followupboss.com/v1/notes/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a note"
+        },
+        {
+          "info": {
+            "name": "Delete a note",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://api.followupboss.com/v1/notes/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a note"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

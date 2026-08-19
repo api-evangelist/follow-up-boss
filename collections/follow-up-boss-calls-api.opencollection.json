@@ -1,0 +1,91 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Follow Up Boss Calls API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Calls",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List calls",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/calls"
+          },
+          "docs": "List calls"
+        },
+        {
+          "info": {
+            "name": "Create a call record",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.followupboss.com/v1/calls",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a call record"
+        },
+        {
+          "info": {
+            "name": "Retrieve a call",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.followupboss.com/v1/calls/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a call"
+        },
+        {
+          "info": {
+            "name": "Update a call",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://api.followupboss.com/v1/calls/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a call"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
