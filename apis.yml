@@ -23,6 +23,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/follow-up-boss.png
 tags:
+  - Real-Estate
+  - CRM
+  - Lead Management
+  - Sales Automation
+  - Follow Up
+  - Pipeline Management
+tags_raw:
   - Real Estate
   - CRM
   - Lead Management
@@ -44,6 +51,12 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
+  - Real-Estate
+  - CRM
+  - Leads
+  - Deals
+  - Webhook
+  tags_raw:
   - Real Estate
   - CRM
   - Leads
@@ -84,6 +97,8 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
+  - Event
+  tags_raw:
   - Events
   properties:
   - type: OpenAPI
@@ -114,6 +129,8 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
+  - Task
+  tags_raw:
   - Tasks
   properties:
   - type: OpenAPI
@@ -124,6 +141,8 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
+  - Text Messages
+  tags_raw:
   - TextMessages
   properties:
   - type: OpenAPI
@@ -134,6 +153,8 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
