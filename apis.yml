@@ -153,7 +153,7 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
-  - Text Messages
+  - TextMessages
   tags_raw:
   - TextMessages
   properties:
