@@ -1,14 +1,7 @@
 {
   "provider": "follow-up-boss",
   "sources": [
-    "follow-up-boss-calls-api-openapi.yml",
-    "follow-up-boss-deals-api-openapi.yml",
-    "follow-up-boss-events-api-openapi.yml",
-    "follow-up-boss-notes-api-openapi.yml",
-    "follow-up-boss-people-api-openapi.yml",
-    "follow-up-boss-tasks-api-openapi.yml",
-    "follow-up-boss-textmessages-api-openapi.yml",
-    "follow-up-boss-webhooks-api-openapi.yml"
+    "_original/follow-up-boss-openapi.yml"
   ],
   "outputs": [
     "follow-up-boss-calls-api-openapi.yml",
@@ -23,6 +16,19 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "follow-up-boss-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "follow-up-boss-calls-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-deals-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-events-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-notes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-people-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-tasks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-textmessages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "follow-up-boss-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

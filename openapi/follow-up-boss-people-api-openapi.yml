@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Follow Up Boss Calls People API
+  title: Follow Up Boss People API
   version: '1.0'
   description: 'Best-effort OpenAPI 3.1 description of the Follow Up Boss REST API,
 
@@ -8,9 +8,7 @@ info:
 
     Authenticated with HTTP Basic using an API key (as username) issued from
 
-    the Follow Up Boss admin settings. HTTPS is required for all requests.
-
-    '
+    the Follow Up Boss admin settings. HTTPS is required for all requests.'
   contact:
     name: Follow Up Boss
     url: https://docs.followupboss.com
@@ -33,6 +31,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: getPeople
+      x-operation-id-source: derived
     post:
       tags:
       - People
@@ -42,6 +42,8 @@ paths:
       responses:
         '201':
           $ref: '#/components/responses/Json'
+      operationId: postPeople
+      x-operation-id-source: derived
   /people/{id}:
     parameters:
     - $ref: '#/components/parameters/Id'
@@ -52,6 +54,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: getPeopleById
+      x-operation-id-source: derived
     put:
       tags:
       - People
@@ -61,6 +65,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: putPeopleById
+      x-operation-id-source: derived
     delete:
       tags:
       - People
@@ -68,6 +74,8 @@ paths:
       responses:
         '204':
           description: Deleted
+      operationId: deletePeopleById
+      x-operation-id-source: derived
   /people/checkDuplicate:
     get:
       tags:
@@ -88,6 +96,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: getPeopleCheckDuplicate
+      x-operation-id-source: derived
   /people/unclaimed:
     get:
       tags:
@@ -96,6 +106,8 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: getPeopleUnclaimed
+      x-operation-id-source: derived
   /people/claim:
     post:
       tags:
@@ -106,8 +118,24 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/Json'
+      operationId: postPeopleClaim
+      x-operation-id-source: derived
 components:
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
   parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
     Limit:
       name: limit
       in: query
@@ -123,20 +151,6 @@ components:
       schema:
         type: integer
         minimum: 0
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: string
-  responses:
-    Json:
-      description: JSON response
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
   requestBodies:
     JsonBody:
       required: true
