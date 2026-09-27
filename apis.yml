@@ -36,7 +36,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/follow-up-boss.png
 tags:
-  - Real-Estate
+  - Real Estate
   - CRM
   - Lead Management
   - Sales Automation
@@ -49,6 +49,7 @@ tags_raw:
   - Sales Automation
   - Follow Up
   - Pipeline Management
+  - Real-Estate
 url: >-
   https://raw.githubusercontent.com/api-evangelist/follow-up-boss/refs/heads/main/apis.yml
 created: '2026-05-11'
@@ -64,7 +65,7 @@ apis:
   humanURL: https://docs.followupboss.com
   baseURL: https://api.followupboss.com/v1
   tags:
-  - Real-Estate
+  - Real Estate
   - CRM
   - Leads
   - Deals
@@ -75,6 +76,7 @@ apis:
   - Leads
   - Deals
   - Webhooks
+  - Real-Estate
   properties:
   - type: Documentation
     url: https://docs.followupboss.com/reference

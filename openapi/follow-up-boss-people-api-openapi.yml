@@ -121,6 +121,14 @@ paths:
       operationId: postPeopleClaim
       x-operation-id-source: derived
 components:
+  requestBodies:
+    JsonBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
   responses:
     Json:
       description: JSON response
@@ -151,14 +159,6 @@ components:
       schema:
         type: integer
         minimum: 0
-  requestBodies:
-    JsonBody:
-      required: true
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
   securitySchemes:
     basicAuth:
       type: http
