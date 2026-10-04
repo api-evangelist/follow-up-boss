@@ -35,6 +35,9 @@ accessModel:
   generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/follow-up-boss.png
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
   - Real Estate
   - CRM
@@ -175,6 +178,9 @@ apis:
   - type: OpenAPI
     url: openapi/follow-up-boss-webhooks-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/follow-up-boss-capability-edges.yml
+    name: Follow Up Boss Business Capability Map
   - type: AgenticAccess
     url: agentic-access/follow-up-boss-agentic-access.yml
   - type: VulnerabilityDisclosure
