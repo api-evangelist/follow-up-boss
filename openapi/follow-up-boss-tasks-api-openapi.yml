@@ -81,17 +81,17 @@ components:
       required: true
       schema:
         type: string
-  requestBodies:
-    JsonBody:
-      required: true
+  responses:
+    Json:
+      description: JSON response
       content:
         application/json:
           schema:
             type: object
             additionalProperties: true
-  responses:
-    Json:
-      description: JSON response
+  requestBodies:
+    JsonBody:
+      required: true
       content:
         application/json:
           schema:
