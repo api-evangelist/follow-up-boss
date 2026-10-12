@@ -1,0 +1,462 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/follow-up-boss/integrations
+checked:
+- https://composio.dev/toolkits/follow-up-boss
+- https://monid.ai/tools/follow-up-boss
+- https://n8n.io/integrations/follow-up-boss/
+- https://zapier.com/apps/follow-up-boss/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: follow-up-boss
+  url: https://zapier.com/apps/follow-up-boss/integrations
+  external_url: http://www.followupboss.com/
+  partner_tier: PLATINUM
+  triggers:
+  - key: appointments_created
+    label: New Appointment
+  - key: deals_created
+    label: New Deal
+  - key: deals_stage_updated
+    label: Deal Stage Updated
+  - key: people_created
+    label: New Contact
+  - key: people_stage_updated
+    label: Person Stage Updated
+  - key: people_tags_created
+    label: Tag Added to Contact
+  - key: people_updated
+    label: Updated Contact
+  actions:
+  - key: add_collaborators
+    label: Add Collaborators
+  - key: add_tag
+    label: Add Tags to a Contact
+  - key: apply_action_plan
+    label: Apply an Action Plan to a Contact
+  - key: attach_file_to_contact
+    label: Attach File to Contact
+  - key: change_stage
+    label: Change Stage of a Contact
+  - key: create_contact_without_triggering_action_plans
+    label: Create Contact Without Triggering Action Plans
+  - key: create_deal
+    label: Create Deal
+  - key: create_note
+    label: Create Note
+  - key: create_task
+    label: Create Task
+  - key: log_call
+    label: Log Call
+  - key: pause_action_plan
+    label: Pause an Action Plan for a Contact
+  - key: reassign_agent
+    label: Reassign Agent
+  - key: send_event
+    label: New Inquiry or Website Event
+  - key: update_contact
+    label: Update Contact
+  - key: _zap_raw_request
+    label: API Request (Beta)
+  searches:
+  - key: find_contact
+    label: Find a Contact
+edges:
+- partner_name: Google Forms
+  partner: google-forms
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/google-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://google.com/
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: Fello
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/fello
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://app.fello.ai/
+- partner_name: Jotform Enterprise
+  partner: jotform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/jotform-enterprise
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.jotform.com/enterprise/
+- partner_name: Manychat
+  partner: manychat
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/manychat
+  direction: third-party
+  category: Social Media Marketing
+  partner_url: https://manychat.com/
+- partner_name: LeadConnector
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/leadconnector
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.leadconnectorhq.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: Jotform
+  partner: jotform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/jotform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://www.jotform.com/
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: GetResponse
+  partner: getresponse
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/getresponse
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.getresponse.com/
+- partner_name: Facebook Lead Ads
+  partner: facebook-lead-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/facebook-lead-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://www.facebook.com/business/ads/lead-ads
+- partner_name: Airtable
+  partner: airtable
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/airtable
+  direction: third-party
+  category: Databases
+  partner_url: https://airtable.com/
+- partner_name: Flodesk
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/flodesk
+  direction: third-party
+  category: Email Newsletters
+  partner_url: https://flodesk.com/
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: Gravity Forms
+  partner: gravity-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/gravity-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.gravityforms.com/?utm_campaign=partners&utm_source=zapier-listing-learn-more&utm_medium=free-placement
+- partner_name: Wufoo
+  partner: wufoo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/wufoo
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.wufoo.com/
+- partner_name: Constant Contact
+  partner: constant-contact
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/constant-contact
+  direction: third-party
+  category: Email Newsletters
+  partner_url: http://www.constantcontact.com/signup.jsp?pn=zapier
+- partner_name: Curb Hero
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/curb-hero
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://curbhe.ro/
+- partner_name: kvCORE
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/kvcore
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.insiderealestate.com/
+- partner_name: Mojo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/mojo
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: http://mojosells.com/
+- partner_name: Google Ads
+  partner: google-ads
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/google-ads
+  direction: third-party
+  category: Ads & Conversion
+  partner_url: https://ads.google.com/
+- partner_name: Slybroadcast
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/slybroadcast
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://zapier.com/www.slybroadcast.com
+- partner_name: Google Contacts
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/google-contacts
+  direction: third-party
+  category: Contact Management
+  partner_url: https://www.google.com/contacts/
+- partner_name: Unbounce
+  partner: unbounce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/unbounce
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://unbounce.com/
+- partner_name: Wix
+  partner: wix
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/wix
+  direction: third-party
+  category: Website Builders
+  partner_url: https://www.wix.com/
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: Mailparser
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/mailparser
+  direction: third-party
+  category: Email
+  partner_url: https://mailparser.io/
+- partner_name: CallRail
+  partner: callrail
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/callrail
+  direction: third-party
+  category: Call Tracking
+  partner_url: https://www.callrail.com/?utm_medium=strategicpartner&utm_source=zapier&utm_campaign=app_listing&utm_content=app_listing
+- partner_name: Calendly
+  partner: calendly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/calendly
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://calendly.com/?utm_medium=partner&utm_source=zapier&utm_campaign=main_partner_page&utm_content=main_inbound_link
+- partner_name: Twilio
+  partner: twilio
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/follow-up-boss/integrations/twilio
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://www.twilio.com/
+templates:
+- title: Create contacts in Follow Up Boss when new lead are added to Curb Hero
+  url: https://zapier.com/apps/curb-hero/integrations/follow-up-boss/47592/create-contacts-in-follow-up-boss-when-new-lead-are-added-to-curb-hero
+  apps:
+  - curb-hero
+  - follow-up-boss
+- title: Create or update contacts in Follow Up Boss from new Jotform submissions
+  url: https://zapier.com/apps/follow-up-boss/integrations/jotform/1583352/create-or-update-contacts-in-follow-up-boss-from-new-jotform-submissions
+  apps:
+  - jotform
+  - follow-up-boss
+- title: Add new Follow Up Boss contacts to Mailchimp
+  url: https://zapier.com/apps/follow-up-boss/integrations/mailchimp/5459/add-new-follow-up-boss-contacts-to-mailchimp
+  apps:
+  - follow-up-boss
+  - mailchimp
+- title: Send new Follow Up Boss contacts to Google Contacts
+  url: https://zapier.com/apps/follow-up-boss/integrations/google-contacts/5456/send-new-follow-up-boss-contacts-to-google-contacts
+  apps:
+  - follow-up-boss
+  - google-contacts
+- title: Add new Follow Up Boss contacts to Fello Connect
+  url: https://zapier.com/apps/fello/integrations/follow-up-boss/1195331/add-new-follow-up-boss-contacts-to-fello-connect
+  apps:
+  - follow-up-boss
+  - filter
+  - fello
+- title: Send new Follow Up Boss contacts to Constant Contact
+  url: https://zapier.com/apps/constant-contact/integrations/follow-up-boss/5467/send-new-follow-up-boss-contacts-to-constant-contact
+  apps:
+  - follow-up-boss
+  - constant-contact
+- title: Add Follow Up Boss inquiries or website events for new form submissions in Leadpages
+  url: https://zapier.com/apps/follow-up-boss/integrations/leadpages/164819/add-follow-up-boss-inquiries-or-website-events-for-new-form-submissions-in-leadpages
+  apps:
+  - leadpages
+  - follow-up-boss
+- title: Create new Follow Up Boss inquiries or website events from Jotform submissions
+  url: https://zapier.com/apps/follow-up-boss/integrations/jotform/1227923/create-new-follow-up-boss-inquiries-or-website-events-from-jotform-submissions
+  apps:
+  - jotform
+  - follow-up-boss
+- title: Send notifications of inquiries or website events in Follow Up Boss for new leads in Fello Connect
+  url: https://zapier.com/apps/fello/integrations/follow-up-boss/1206623/send-notifications-of-inquiries-or-website-events-in-follow-up-boss-for-new-leads-in-fello-connect
+  apps:
+  - fello
+  - follow-up-boss
+  - filter
+- title: Add new Follow Up Boss contacts for new Jotform submissions
+  url: https://zapier.com/apps/follow-up-boss/integrations/jotform/5478/add-new-follow-up-boss-contacts-for-new-jotform-submissions
+  apps:
+  - jotform
+  - follow-up-boss
+- title: Create or update Follow Up Boss contacts without triggering action plans for new leads in Luxury Prospect
+  url: https://zapier.com/apps/follow-up-boss/integrations/luxury-prospect/1823255/create-or-update-follow-up-boss-contacts-without-triggering-action-plans-for-new-leads-in-luxury-prospect
+  apps:
+  - luxury-prospect
+  - follow-up-boss
+- title: Add new Follow Up Boss contacts to Fello Connect (latest)
+  url: https://zapier.com/apps/fello/integrations/follow-up-boss/1671200/add-new-follow-up-boss-contacts-to-fello-connect-latest
+  apps:
+  - follow-up-boss
+  - filter
+  - fello
+template_total: 2983
