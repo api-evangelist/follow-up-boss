@@ -121,15 +121,15 @@ paths:
       operationId: postPeopleClaim
       x-operation-id-source: derived
 components:
-  responses:
-    Json:
-      description: JSON response
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
   parameters:
+    Limit:
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
     Id:
       name: id
       in: path
@@ -143,17 +143,17 @@ components:
       schema:
         type: integer
         minimum: 0
-    Limit:
-      name: limit
-      in: query
-      required: false
-      schema:
-        type: integer
-        minimum: 1
-        maximum: 100
   requestBodies:
     JsonBody:
       required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  responses:
+    Json:
+      description: JSON response
       content:
         application/json:
           schema:

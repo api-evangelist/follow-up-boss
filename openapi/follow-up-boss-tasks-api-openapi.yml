@@ -74,21 +74,6 @@ paths:
       operationId: deleteTasksById
       x-operation-id-source: derived
 components:
-  parameters:
-    Id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: string
-  responses:
-    Json:
-      description: JSON response
-      content:
-        application/json:
-          schema:
-            type: object
-            additionalProperties: true
   requestBodies:
     JsonBody:
       required: true
@@ -97,6 +82,21 @@ components:
           schema:
             type: object
             additionalProperties: true
+  responses:
+    Json:
+      description: JSON response
+      content:
+        application/json:
+          schema:
+            type: object
+            additionalProperties: true
+  parameters:
+    Id:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
   securitySchemes:
     basicAuth:
       type: http
