@@ -4,6 +4,7 @@ source:
 - https://zapier.com/apps/follow-up-boss/integrations
 checked:
 - https://composio.dev/toolkits/follow-up-boss
+- https://github.com/meltano/hub
 - https://monid.ai/tools/follow-up-boss
 - https://n8n.io/integrations/follow-up-boss/
 - https://zapier.com/api/v4/apps/
@@ -421,6 +422,35 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
+- partner_name: Meltano
+  partner: meltano
+  partner_match: aggregator
+  type: marketplace
+  marketplace: meltano-hub
+  channel: elt-connector
+  relationship: ipaas-bridge
+  direction: third-party
+  evidence: https://hub.meltano.com/extractors/tap-followupboss--hotgluexyz
+  category: null
+  contract_reference:
+    register: Meltano Hub (github.com/meltano/hub _data/meltano extractors + loaders)
+    spec_file: null
+    role: elt-connector:meltano-hub
+    registered_name: Followupboss
+    matched_domain: followupboss.com
+    matched_by: domain
+    detected_by: sweep-data-integration.py
+    detected: '2026-10-18'
+    signal_note: one edge per (provider, platform); connectors, streams, packages and usage are context, never read
+    plugins:
+    - tap-followupboss--hotgluexyz
+    maintenance_status:
+    - active
+    quality:
+    - gold
+    builder: 'community (Meltano Hub variant maintainers: hotgluexyz)'
+  detected_by: sweep-data-integration.py
+  first_seen: '2026-10-18'
 templates:
 - title: Create contacts in Follow Up Boss when new lead are added to Curb Hero
   url: https://zapier.com/apps/curb-hero/integrations/follow-up-boss/47592/create-contacts-in-follow-up-boss-when-new-lead-are-added-to-curb-hero
