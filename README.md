@@ -1,4 +1,4 @@
-# Follow Up Boss (follow-up-boss)
+# Follow Up Boss
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,65 +66,117 @@
 
 Follow Up Boss is a real estate CRM and lead management platform helping agents and teams capture leads from any source, automate follow-up via texts, emails, and calls, manage pipelines and deals, and track team performance. The Follow Up Boss REST API exposes resources such as people, notes, tasks, deals, calls, text messages, events, and webhooks, secured with HTTP Basic authentication using an API key obtained from the application's admin settings.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/follow-up-boss/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/follow-up-boss/refs/heads/main/apis.yml)
+**Areas:** Real Estate · CRM · Lead Management · Sales Automation · Follow Up · Pipeline Management
 
-## Scope
+## Follow Up Boss on APIs.io
 
-- **Type:** Index
+Everything profiled for Follow Up Boss is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/follow-up-boss/](https://apis.io/providers/follow-up-boss/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (9)
 
-- Real Estate
-- CRM
-- Lead Management
-- Sales Automation
-- Follow Up
-- Pipeline Management
+- [Follow Up Boss API](https://apis.io/apis/follow-up-boss/rest-api/) — REST API for managing real estate leads, contacts, deals, notes, tasks, calls, text messages, events, and webhooks in Follow Up Boss. Authenticated with…
+- [Follow Up Boss Calls API](https://apis.io/apis/follow-up-boss/follow-up-boss-calls-api/) — The Calls API from Follow Up Boss — 2 operation(s) for calls.
+- [Follow Up Boss Deals API](https://apis.io/apis/follow-up-boss/follow-up-boss-deals-api/) — The Deals API from Follow Up Boss — 2 operation(s) for deals.
+- [Follow Up Boss Events API](https://apis.io/apis/follow-up-boss/follow-up-boss-events-api/) — The Events API from Follow Up Boss — 2 operation(s) for events.
+- [Follow Up Boss Notes API](https://apis.io/apis/follow-up-boss/follow-up-boss-notes-api/) — The Notes API from Follow Up Boss — 2 operation(s) for notes.
+- [Follow Up Boss People API](https://apis.io/apis/follow-up-boss/follow-up-boss-people-api/) — The People API from Follow Up Boss — 5 operation(s) for people.
+- [Follow Up Boss Tasks API](https://apis.io/apis/follow-up-boss/follow-up-boss-tasks-api/) — The Tasks API from Follow Up Boss — 2 operation(s) for tasks.
+- [Follow Up Boss TextMessages API](https://apis.io/apis/follow-up-boss/follow-up-boss-textmessages-api/) — The TextMessages API from Follow Up Boss — 2 operation(s) for textmessages.
+- [Follow Up Boss Webhooks API](https://apis.io/apis/follow-up-boss/follow-up-boss-webhooks-api/) — The Webhooks API from Follow Up Boss — 2 operation(s) for webhooks.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Follow Up Boss API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-REST API for managing real estate leads, contacts, deals, notes, tasks, calls, text messages, events, and webhooks in Follow Up Boss. Authenticated with HTTP Basic using an API key issued from the Follow Up Boss admin settings. HTTPS is required for all requests.
+- [Follow Up Boss Agentic Access](https://apis.io/agentic-access/follow-up-boss/follow-up-boss-agentic-access/)
 
-- **Human URL:** [https://docs.followupboss.com](https://docs.followupboss.com)
-- **Base URL:** `https://api.followupboss.com/v1`
+#### Collections (9)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Real Estate
-- CRM
-- Leads
-- Deals
-- Webhooks
+- [Follow Up Boss API](https://apis.io/collections/follow-up-boss/open-follow-up-boss/)
+- [Follow Up Boss Calls API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-calls-api/)
+- [Follow Up Boss Calls Deals API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-deals-api/)
+- [Follow Up Boss Calls Events API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-events-api/)
+- [Follow Up Boss Calls Notes API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-notes-api/)
+- [Follow Up Boss Calls People API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-people-api/)
+- [Follow Up Boss Calls Tasks API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-tasks-api/)
+- [Follow Up Boss Calls TextMessages API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-textmessages-api/)
+- [Follow Up Boss Calls Webhooks API](https://apis.io/collections/follow-up-boss/open-follow-up-boss-webhooks-api/)
 
-#### Properties
+#### Security (3)
 
-- [Documentation](https://docs.followupboss.com/reference)
-- [Getting Started](https://docs.followupboss.com/reference/getting-started)
-- [Authentication](https://docs.followupboss.com/reference/authentication)
-- [Webhooks](https://docs.followupboss.com/reference/webhooks)
-- [Postman Collection](collections/follow-up-boss.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/follow-up-boss.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Follow Up Boss Authentication](https://apis.io/security/follow-up-boss/follow-up-boss-authentication/)
+- [Follow Up Boss Domain Security](https://apis.io/security/follow-up-boss/follow-up-boss-domain-security/)
+- [Follow Up Boss Vulnerability Disclosure](https://apis.io/security/follow-up-boss/follow-up-boss-vulnerability-disclosure/)
 
-- [GitHub Organization](https://github.com/FollowUpBoss)
-- [LinkedIn](https://www.linkedin.com/company/follow-up-boss)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.followupboss.com)
 - [Documentation](https://docs.followupboss.com)
 - [Pricing](https://www.followupboss.com/pricing)
-- [Sign Up](https://www.followupboss.com/free-trial)
 - [Support](https://help.followupboss.com)
-- [Status Page](https://status.followupboss.com)
-- [L L Ms Txt](https://docs.followupboss.com/llms.txt)
+- [Blog](https://www.followupboss.com/blog)
+- [GitHub](https://github.com/FollowUpBoss)
+- [Status](https://status.followupboss.com)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 18.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 3.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 23.7 |
+
+**Agent readiness 21.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/follow-up-boss/](https://apis.io/providers/follow-up-boss/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Follow Up Boss: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/follow-up-boss/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
